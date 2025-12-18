@@ -50,18 +50,22 @@ export default function ServicesSection() {
     <section className="w-full bg-black text-white font-sans">
       {/* === Video Section === */}
       <div className="relative w-full h-[45vh] sm:h-[55vh] md:h-[70vh] overflow-hidden">
-        <video
-          src="/videos/"
-          controls
-          className="w-full h-full object-cover"
-        />
-        {/* Bouton play animé */}
-        <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
-          <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full bg-gray-900/70 flex items-center justify-center shadow-2xl animate-pulse opacity-90">
-            <Play className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white drop-shadow" />
-          </div>
-        </div>
-      </div>
+  <iframe
+    src="https://www.youtube.com/embed/Gm9fottcBjA?si=eYETz6OwKXu4UMDe"
+    title="MoovUp Video"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowFullScreen
+    className="w-full h-full object-cover"
+  ></iframe>
+
+  {/* Bouton play animé */}
+  <div className="absolute inset-0 flex items-center justify-center z-20 pointer-events-none">
+    <div className="relative w-16 h-16 sm:w-20 sm:h-20 md:w-28 md:h-28 rounded-full bg-gray-900/70 flex items-center justify-center shadow-2xl animate-pulse opacity-90">
+      <Play className="w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12 text-white drop-shadow" />
+    </div>
+  </div>
+</div>
+
 
       {/* === Services Grid === */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
